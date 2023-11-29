@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Mapa Jardín de la Isla</title>
+    <link rel="stylesheet" href="leaflet/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id="map">
+
+    </div>
+    <button id="geolocalizar">Activar geolocalización</button>
+    <div id="legend">
+        <button id="collapselegend">X</button>
+        <ol>
+            <li><a href="#" onclick="markerReina.fire('click')">Entrada por el Jardín de la Reina</a></li>
+            <li><a href="#" onclick="markerParterre.fire('click')">Entrada por el Jardín del Parterre</a></li>
+            <li><a href="#" onclick="markerBoticaria.fire('click')">Fuente de la Boticaria</a><a href="https://00andrea00.github.io/Boticaria/" id="info"> (Info)</a></li>
+            <li><a href="#" onclick="markerPresa.fire('click')">Presa del Palacio</a><a href="https://crisbm9.github.io/Recurso_Presa/"> (Info)</a></li>
+            <li><a href="#" onclick="markerHercules.fire('click')">Fuente de Hércules y la Hidra</a></li>
+            <li><a href="#" onclick="markerEstatuas.fire('click')">Jardín de las Estatuas</a></li>
+            <li><a href="#" onclick="markerCascada.fire('click')">Cascada de las Castañuelas</a></li>
+            <li><a href="#" onclick="markerApolo.fire('click')">Fuente de Apolo</a></li>
+            <li><a href="#" onclick="markerGaleria.fire('click')">La Galería</a><a href="https://albrtovicente.github.io/galeriaAranjuez/"> (Info)</a></li>
+            <li><a href="#" onclick="markerReloj.fire('click')">Fuente del Reloj</a></li>
+            <li><a href="#" onclick="markerReyes.fire('click')">Salón de los Reyes Católicos</a></li>
+            <li><a href="#" onclick="markerNino.fire('click')">Fuente del Niño de la Espina</a><a href="https://rram1313.github.io/nino_espina/" id="info"> (Info)</a></li>
+            <li><a href="#" onclick="markerPajarera.fire('click')">La Pajarera</a></li>
+            <li><a href="#" onclick="markerCenador.fire('click')">Cenador</a></li>
+            <li><a href="#" onclick="markerVenus.fire('click')">Fuente de Venus</a></li>
+            <li><a href="#" onclick="markerObelisco.fire('click')">El Obelisco</a></li>
+            <li><a href="#" onclick="markerPuente.fire('click')">Antigüo Puente Verde</a></li>
+            <li><a href="#" onclick="markerCulon.fire('click')">Mirador del Culón</a></li>
+            <li><a href="#" onclick="markerNeptuno.fire('click')">Fuente de Neptuno</a></li>
+            <li><a href="#" onclick="markerBaco.fire('click')">Fuente de Baco</a></li>
+            <li><a href="#" onclick="markerRosedal.fire('click')">El Rosedal</a></li>
+            <li><a href="#" onclick="markerDiana.fire('click')">Fuente de Diana</a><a href="https://albrtovicente.github.io/FuenteDeDianaAranjuez/"> (Info)</a></li>
+            <li><a href="#" onclick="markerTronca.fire('click')">Plátanos de la Tronca</a><a href="https://crisbm9.github.io/platanosdelatronca/"> (Info)</a></li>
+            <li><a href="#" onclick="markerLloron.fire('click')">Plátano Llorón</a></li>
+        </ol>
+    </div>
+    <h1 class="titulo">Jardín de la Isla</h1>
+    <script src="leaflet/leaflet.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/geolocalizacion.js"></script>
+    <script src="js/collapse.js"></script>
+</body>
+</html>
